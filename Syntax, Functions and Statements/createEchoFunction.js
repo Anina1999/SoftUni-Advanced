@@ -3,4 +3,4 @@ function createEchoFunction(string) {
     console.log(string);
 }
 
-createEchoFunction('Hello, JavaScript!');
+//createEchoFunction('Hello, JavaScript!');
