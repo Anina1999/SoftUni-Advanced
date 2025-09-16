@@ -1,3 +1,4 @@
+//solve 1
 function cookingByNumbers(inputNum, opOne, opTwo, opThree, opFour, opFive) {
     let operationsArr = [opOne, opTwo, opThree, opFour, opFive].map(String);
     let num = Number(inputNum);
@@ -29,3 +30,21 @@ function cookingByNumbers(inputNum, opOne, opTwo, opThree, opFour, opFive) {
 
 /*cookingByNumbers('9', 'dice', 'spice', 'chop', 'bake',
 'fillet');*/
+
+//solve 2
+function cookingByNumbers(inputNum, ...operationsArr) {
+    let operation = {
+        "chop" : (num) => num / 2,
+        "dice" : (num) => Math.sqrt(num),
+        "spice" : (num) => num += 1,
+        "bake" : (num) => num *= 3,
+        "fillet" : (num) => num *= 0.8
+    }
+
+    let num = Number(inputNum);
+
+    for (let op of operationsArr) {
+        num = operation[op](num);
+        console.log(num);
+    }
+}
