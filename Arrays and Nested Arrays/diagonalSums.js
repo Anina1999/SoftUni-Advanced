@@ -10,7 +10,7 @@ function sumDiagonals(matrix) {
     console.log(`${firstDiagonal} ${secondDiagonal}`);
 }
 
-sumDiagonals([[3, 5, 17], [-1, 7, 14], [1, -8, 89]]);
+//sumDiagonals([[3, 5, 17], [-1, 7, 14], [1, -8, 89]]);
 
 //solve 2
 function sumDiagonals(matrix) {
